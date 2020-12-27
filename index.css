@@ -15,6 +15,10 @@ body{
 	background: #f7f7f7;
 	transition: .5s;
 }
+@font-face{
+	font-family: 'Montserrat';
+	src: url('Montserrat.ttf');
+}
 .not-footer{
 	min-height: calc(100vh - 250px);
 }
