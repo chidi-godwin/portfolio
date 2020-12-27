@@ -46,6 +46,7 @@ body{
 	cursor: pointer;
 	-webkit-text-stroke: 3px #018673;
 	transition: .5s;
+	border-radius: 5px;
 }
 .back-to-top:hover{
 	opacity: 1;
