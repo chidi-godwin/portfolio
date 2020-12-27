@@ -17,7 +17,7 @@ body{
 }
 @font-face{
 	font-family: 'Montserrat';
-	src: url('Montserrat.ttf');
+	src: url('Montserrat-Regular.ttf');
 }
 .not-footer{
 	min-height: calc(100vh - 250px);
@@ -413,7 +413,7 @@ body{
 	box-shadow: 0 0px 6px rgba(32,33,36,.28);
 	margin: 130px auto;
 	margin-bottom: 50px;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .about-article-cont{
 	width: 100%;
