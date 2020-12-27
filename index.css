@@ -3,6 +3,10 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+@font-face{
+	font-family: 'MONTSERRAT-REGULAR';
+	src: url('MONTSERRAT-REGULAR.ttf');
+}
 html,body{
 	height: 100%;
 	scroll-behavior: smooth;
@@ -10,14 +14,10 @@ html,body{
 body{
 	min-height: 100vh;
 	position: relative;
-	font-family: "Montserrat";
+	font-family: 'MONTSERRAT-REGULAR';
 	background: white;
 	background: #f7f7f7;
 	transition: .5s;
-}
-@font-face{
-	font-family: 'Montserrat';
-	src: url('Montserrat-Regular.ttf');
 }
 .not-footer{
 	min-height: calc(100vh - 250px);
@@ -658,7 +658,7 @@ input[type=email]{
 	height: 40px;
 	max-height: 200px;
 	padding: 12px;
-	outline: transparent;
+	outline: none;
 	border: 1px #2A454E solid;
 	background: transparent;
 }
