@@ -40,14 +40,7 @@ function reset()
 }
 function display(x)
 {
-	if(x == 'hamburger')
-	{
-		document.getElementsByClassName('e')[0].style.animation = 'move1 0.5s ease-out .6s';
-		document.getElementsByClassName('e')[1].style.animation = 'move2 0.6s ease-out .6s';
-		document.getElementsByClassName('e')[2].style.animation = 'move3 0.7s ease-out .6s';
-		setTimeout(reset, 1200);
-	}
-	else if (x == 'logo-footer')
+	if (x == 'logo-footer')
 	{
 		document.getElementsByClassName('e-footer')[0].style.animation = 'move1 0.5s ease-out';
 		document.getElementsByClassName('e-footer')[1].style.animation = 'move2 0.6s ease-out';
