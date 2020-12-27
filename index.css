@@ -4,8 +4,8 @@
 	box-sizing: border-box;
 }
 @font-face{
-	font-family: 'MONTSERRAT-REGULAR';
-	src: url('MONTSERRAT-REGULAR.ttf');
+	font-family: 'Montserrat-Regular';
+	src: url('Montserrat-Regular.ttf');
 }
 html,body{
 	height: 100%;
@@ -14,7 +14,7 @@ html,body{
 body{
 	min-height: 100vh;
 	position: relative;
-	font-family: 'MONTSERRAT-REGULAR';
+	font-family: 'Montserrat-Regular';
 	background: white;
 	background: #f7f7f7;
 	transition: .5s;
