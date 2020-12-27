@@ -44,8 +44,6 @@ body{
 	color: white;
 	opacity: .5;
 	cursor: pointer;
-	transform: rotate(180deg);
-	cursor: pointer;
 	-webkit-text-stroke: 3px #018673;
 	transition: .5s;
 }
@@ -861,7 +859,10 @@ textarea{
 		display: flex;
 		width: 55%;
 	}
+	.header{
+		z-index: 2;
+	}
 	.anchor{
-		z-index: 99;
+		z-index: 1;
 	}
 }
