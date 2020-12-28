@@ -60,19 +60,19 @@ function openNav()
 	var sideNav = document.getElementById('vertical-nav');
 	var hamBurger = document.getElementsByClassName('hamburger')[0];
 	var overlay = document.getElementById('nav-overlay');
-	var head = document.getElementById('header');
+// 	var head = document.getElementById('header');
 
 	if(sideNav.style.left == '0%'){
 		sideNav.style.left = '-60%';
 		hamBurger.style.marginRight = '0';
 		overlay.style.display = 'none';
-		head.style.background = '#1b1e22';
+// 		head.style.background = '#1b1e22';
 	}
 	else{
 		sideNav.style.left = '0%';
 		hamBurger.style.marginRight = '41.5%';
 		overlay.style.display = 'block';
-		head.style.background = '#0D0F11';
+// 		head.style.background = '#0D0F11';
 	}
 }
 function funcFocus(x, y)
