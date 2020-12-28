@@ -353,6 +353,8 @@ button{
 	font-size:30px;
 	font-family: 'Montserrat-Bold';
 	font-weight:bold;
+	letter-spacing: -1px;
+	word-spacing: -1px;
 }
 .content{
 	display: flex;
@@ -453,6 +455,7 @@ button{
 	font-weight: bold;
 	margin-bottom: 20px;
 	color: #1B1E22;
+	letter-spacing: -.5px;
 }
 .about-title{
 	margin-top: 0;
