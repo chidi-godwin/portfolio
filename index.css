@@ -60,7 +60,7 @@ body{
 	opacity: 1;
 }
 .header{
-	background: #018673;
+	background: #1B1E22;
 	position: fixed;
 	top: 0;
 	padding: 20px;
@@ -69,7 +69,7 @@ body{
 	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	height: 80px;
+	height: 65px;
 	box-shadow: 0 4px 6px rgba(32,33,36,.28);
 	border-bottom: 1px #979da5 solid;
 }
@@ -197,8 +197,8 @@ body{
 	flex-direction: column;
 }
 .space{
-	background: #018673;
-	height: 80px;
+	background: none;
+	height: 65px;
 	width: 100%;
 	padding: 20px;
 	box-shadow: 0 4px 6px rgba(32,33,36,.28);
@@ -414,10 +414,10 @@ body{
 	align-items: center;
 	flex-direction: column;
 	padding: 20px;
-	width: 85%;
+	width: 90%;
 	max-width: 1500px;
 	box-shadow: 0 0px 6px rgba(32,33,36,.28);
-	margin: 130px auto;
+	margin: 100px auto;
 	margin-bottom: 50px;
 	overflow: hidden;
 }
@@ -450,7 +450,7 @@ body{
 .title{
 	display: inline-block;
 	margin-top: 110px;
-	font-size: 28px;
+	font-size: 25px;
 	text-align: center;
 	font-family: 'Montserrat-Bold';
 	font-weight: bold;
@@ -475,10 +475,10 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 85%;
+	width: 90%;
 	max-width: 1500px;
 	box-shadow: 0 0px 6px rgba(32,33,36,.28);
-	margin: 130px auto;
+	margin: 100px auto;
 	margin-bottom: 50px;
 	overflow-x: hidden;
 }
@@ -527,10 +527,10 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width: 85%;
+	width: 90%;
 	max-width: 1500px;
 	box-shadow: 0 0px 6px rgba(32,33,36,.28);
-	margin: 130px auto;
+	margin: 100px auto;
 	margin-bottom: 50px;
 }
 .project-title{
@@ -619,11 +619,11 @@ body{
 .contact{
 	display: flex;
 	flex-wrap: wrap;
-	width: 85%;
+	width: 90%;
 	max-width: 1500px;
 	height: 600px;
 	box-shadow: 0 0px 6px rgba(32,33,36,.28);
-	margin: 130px auto;
+	margin: 100px auto;
 	margin-bottom: 50px;
 	background: rgba(1,134,115,1);
 	overflow-x: hidden;
@@ -850,11 +850,6 @@ textarea{
 	.contact-image{
 		display: block;
 	}
-	.project-image{
-		width: 295px;
-		height: 295px;
-		padding-bottom: 0;
-	}
 }
 @media screen and (min-width: 750px)
 {
@@ -877,5 +872,10 @@ textarea{
 	}
 	.anchor{
 		z-index: 1;
+	}
+	.project-image{
+		width: 295px;
+		height: 295px;
+		padding-bottom: 0;
 	}
 }
