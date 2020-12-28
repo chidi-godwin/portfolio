@@ -451,7 +451,7 @@ body{
 	font-family: 'Montserrat-Bold';
 	font-weight: bold;
 	margin-bottom: 20px;
-	color: #018673;
+	color: #1B1E22;
 }
 .about-title{
 	margin-top: 0;
@@ -495,7 +495,7 @@ body{
 }
 .fa-pencil-alt, .fa-code, .fa-tv{
 	margin-right: 0;
-	color: #8AB8B8;
+	color: #018673;
 }
 .sub-title{
 	font-size: 22px;
@@ -533,7 +533,6 @@ body{
 	margin-top: 0;
 	padding: 20px;
 	margin-bottom: 0;
-	color: #018673;
 }
 .projects-cont{
 	display: flex;
