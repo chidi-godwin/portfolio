@@ -23,6 +23,9 @@ body{
 	background: #f7f7f7;
 	transition: .5s;
 }
+button{
+	border-radius: 3px;
+}
 .not-footer{
 	min-height: calc(100vh - 250px);
 }
@@ -688,7 +691,6 @@ textarea{
 	margin-bottom: 30px;
 	background-color: #018673;
 	box-shadow: 0 0px 6px rgba(0,0,0,.1);
-	border-radius: 3px;
 }
 .submit:hover{
 	background-color: #017D6A;
