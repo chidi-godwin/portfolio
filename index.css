@@ -69,8 +69,7 @@ button{
 	justify-content: space-between;
 	align-items: center;
 	height: 65px;
-	box-shadow: 0 4px 6px rgba(32,33,36,.28);
-	border-bottom: 1px #979da5 solid;
+	box-shadow: 0 4px 6px rgba(0,0,0,.28);
 }
 .logo{
 	display: inline-flex;
@@ -190,7 +189,7 @@ button{
 	width: 60%;
 	left: -60%;
 	top: 0;
-	background: #1b1e22;
+	background: #344145;
 	transition: 0.5s ease-out;
 	display: flex;
 	flex-direction: column;
@@ -200,8 +199,7 @@ button{
 	height: 65px;
 	width: 100%;
 	padding: 20px;
-	box-shadow: 0 4px 6px rgba(32,33,36,.28);
-	border-bottom: 1px #979da5 solid;
+	box-shadow: 0 4px 6px rgba(0,0,0,.28);
 }
 #vertical-nav .links{
 	width: 100%;
@@ -216,7 +214,7 @@ button{
 	margin-top: 25px;
 	text-decoration: none;
 	padding: 8px 0;
-	border-bottom: 2px #3e444d solid;
+	border-bottom: 2px #46575C solid;
 	color: white;
 }
 .fas,.fab{
