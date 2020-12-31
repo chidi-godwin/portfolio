@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+{% load static %}
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://kit.fontawesome.com/6d56d9fa5c.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
 	<title>home</title>
 </head>
 <body onload="stabilize()">
@@ -25,7 +26,7 @@
 			</div>
 			<span class="logo-name">Ezekiel</span>
 		</div>
-		<div id="hamburger" class="hamburger" onclick="openNav(), display(this.id)">
+		<div id="hamburger" class="hamburger" onclick="openNav(); display(this.id)">
 			<input type="checkbox">
 			<span class="ham"></span>
 			<span class="ham"></span>
@@ -33,11 +34,11 @@
 		<div id="vertical-nav">
 			<div class="space"></div>
 			<div class="links">
-				<a href="index.html" style="color:#4AEFDF;"><i class="fas fa-home"></i> Home</a>
-				<a href="about.html"><i class="fas fa-user"></i> About</a>
-				<a href="skills.html"><i class="fas fa-tools"></i> Skills</a>
-				<a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
-				<a href="contact.html"><i class="fas fa-paper-plane"></i>Contact</a>
+				<a href="{% url 'index' %}" style="color:#4AEFDF;"><i class="fas fa-home"></i> Home</a>
+				<a href="{% url 'about' %}"><i class="fas fa-user"></i> About</a>
+				<a href="{% url 'skills' %}"><i class="fas fa-tools"></i> Skills</a>
+				<a href="{% url 'projects' %}"><i class="fas fa-project-diagram"></i> Projects</a>
+				<a href="{% url 'contact' %}"><i class="fas fa-paper-plane"></i>Contact</a>
 			</div>
 			<div class="social">
 				<a href="https://www.instagram.com/nwoye_ezekiel/"><i class="fab fa-instagram social-icon"></i></a>
@@ -47,11 +48,11 @@
 		</div>
 		<div class="horizontal-nav">
 			<div class="links">
-				<a href="index.html" class="current" onmouseover="this.style.borderBottom='2px #4AEFDF solid'">Home</a>
-				<a href="about.html">About</a>
-				<a href="skills.html">Skills</a>
-				<a href="projects.html">Projects</a>
-				<a href="contact.html">Contact</a>
+				<a href="{% url 'index' %}" class="current" onmouseover="this.style.borderBottom='2px #4AEFDF solid'">Home</a>
+				<a href="{% url 'about' %}">About</a>
+				<a href="{% url 'skills' %}">Skills</a>
+				<a href="{% url 'projects' %}">Projects</a>
+				<a href="{% url 'contact' %}">Contact</a>
 			</div>
 		</div>
 	</div>
@@ -80,7 +81,7 @@
 			<p data-aos="fade-left">
 				I design beautiful and neat graphics, user interfaces and amazing websites.
 			</p>
-			<img data-aos="fade-zoom-in" src="6.jpg" style="width:100%;max-width:800px;">
+			<img data-aos="fade-zoom-in" src="{% static 'images/6.jpg' %}" style="width:100%;max-width:800px;">
 		</div>
 	</div>
 	<div class="section section2" style="background:lightblue">

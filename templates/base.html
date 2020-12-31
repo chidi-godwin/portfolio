@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/6d56d9fa5c.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+    <title>{% block title %}skills{% endblock %}</title>
+</head>
+<body onload="stabilize()">
+<div class="not-footer">
+    <div id="nav-overlay"></div>
+    <button onclick="topFunction()" class="back-to-top" id="back-to-top"><i class="fas fa-chevron-up"
+                                                                            style="font-size:35px; margin-right:0; color:white;"></i>
+    </button>
+    <!-----------------------------Header--------------------------->
+    <div class="header">
+        <div id="logo" class="logo" onmouseenter="display(this.id)" onclick="display(this.id)">
+            <div class="logo-design">
+                <div class="e-cont">
+                    <div class="e e1"></div>
+                    <div class="e e2"></div>
+                    <div class="e e3"></div>
+                </div>
+            </div>
+            <span class="logo-name">Ezekiel</span>
+        </div>
+        <div id="hamburger" class="hamburger" onclick="openNav(); display(this.id)">
+            <input type="checkbox">
+            <span class="ham"></span>
+            <span class="ham"></span>
+        </div>
+        <div id="vertical-nav">
+            <div class="space"></div>
+            <div class="links">
+                <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a>
+                <a href="{% url 'about' %}" style="color:#4AEFDF;"><i class="fas fa-user"></i> About</a>
+                <a href="{% url 'skills' %}"><i class="fas fa-tools"></i> Skills</a>
+                <a href="{% url 'projects' %}"><i class="fas fa-project-diagram"></i> Projects</a>
+                <a href="{% url 'contact' %}"><i class="fas fa-paper-plane"></i>Contact</a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/nwoye_ezekiel/"><i class="fab fa-instagram social-icon"></i></a>
+                <a href="https://www.twitter.com/nwoye_ezekiel/"><i class="fab fa-twitter social-icon"></i></a>
+                <a href="mailto:chinecherem.nwoye.cn@gmail.com"><i class="far fa-envelope social-icon"></i></a>
+            </div>
+        </div>
+        <div class="horizontal-nav">
+            <div class="links">
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'about' %}" class="current" onmouseover="this.style.borderBottom='2px #4AEFDF solid'">About</a>
+                <a href="{% url 'skills' %}">Skills</a>
+                <a href="{% url 'projects' %}">Projects</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!--------------------------/Header----------------------------->
+
+    {% block content %}{% endblock %}
+</div>
+<!--------------------------Footer------------------------------>
+<div class="section footer" style="background: #1B1E22;">
+    <div id="logo-footer" class="logo logo-footer" onmouseenter="display(this.id)" onclick="display(this.id)">
+        <div class="logo-design">
+            <div class="e-cont">
+                <div class="e e-footer e1"></div>
+                <div class="e e-footer e2"></div>
+                <div class="e e-footer e3"></div>
+            </div>
+        </div>
+        <span class="logo-name">Ezekiel</span>
+    </div>
+    <div class="footer__cont" style="color:white; font-size:18px;">Follow/contact on</div>
+    <div class="social footer__cont" style="color: white;">
+        <a href="https://www.instagram.com/nwoye_ezekiel/"><i class="fab fa-instagram social-icon"></i></a>
+        <a href="https://www.twitter.com/nwoye_ezekiel/"><i class="fab fa-twitter social-icon"></i></a>
+        <a href="mailto:chinecherem.nwoye.cn@gmail.com"><i class="far fa-envelope social-icon"></i></a>
+    </div>
+    <div class="footer__cont" style="color:#979da5;">
+        © 2020 Ezekiel, Inc. All Rights Reserved.
+    </div>
+    <div class="footer__cont" style="color:#979da5; margin-top:10px;">
+        Handcrafted by Me.
+    </div>
+</div>
+<!-------------------------/Footer------------------------------>
+<!-------------------------Script------------------------------->
+<script type="text/javascript">
+    AOS.init({
+        duration: 1200,
+    })
+</script>
+<!------------------------/Script------------------------------->
+
+</body>
+</html>
