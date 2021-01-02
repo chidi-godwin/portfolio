@@ -9,7 +9,8 @@
 			<div class="contact-half">
 				<div data-aos="fade-right" class="title contact-title">Contact</div>
 				<div class="form-cont">
-					<form>
+					<form method="POST" action="">
+                        {% csrf_token %}
 						<div style="position:relative; margin-bottom:25px;">
 							<input onfocus="funcFocus(this.id, 'l-fname')" onblur="funcBlur(this.id, 'l-fname', this.type)" type="text" name="firstname" id="fname" required="">
 							<label id="l-fname" for="fname">First Name</label>
