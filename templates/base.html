@@ -37,11 +37,8 @@
         <div id="vertical-nav">
             <div class="space"></div>
             <div class="links">
-                <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a>
-                <a href="{% url 'about' %}" style="color:#4AEFDF;"><i class="fas fa-user"></i> About</a>
-                <a href="{% url 'skills' %}"><i class="fas fa-tools"></i> Skills</a>
-                <a href="{% url 'projects' %}"><i class="fas fa-project-diagram"></i> Projects</a>
-                <a href="{% url 'contact' %}"><i class="fas fa-paper-plane"></i>Contact</a>
+                {% block vertical-links %}
+                {% endblock vertical-links %}
             </div>
             <div class="social">
                 <a href="https://www.instagram.com/nwoye_ezekiel/"><i class="fab fa-instagram social-icon"></i></a>
@@ -51,14 +48,8 @@
         </div>
         <div class="horizontal-nav">
             <div class="links">
-                {% block links %}
-                    <a href="{% url 'index' %}">Home</a>
-                    <a href="{% url 'about' %}" class="current"
-                       onmouseover="this.style.borderBottom='2px #4AEFDF solid'">About</a>
-                    <a href="{% url 'skills' %}">Skills</a>
-                    <a href="{% url 'projects' %}">Projects</a>
-                    <a href="{% url 'contact' %}">Contact</a>
-                {% endblock links %}
+                {% block horizontal-links %}
+                {% endblock horizontal-links %}
             </div>
         </div>
     </div>

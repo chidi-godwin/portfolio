@@ -2,14 +2,22 @@
 
 {% block title %}Projects{% endblock %}
 
-{% block links %}
+{% block vertical-links %}
+    <a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a>
+    <a href="{% url 'about' %}"><i class="fas fa-user"></i> About</a>
+    <a href="{% url 'skills' %}"><i class="fas fa-tools"></i> Skills</a>
+    <a href="{% url 'projects' %}" style="color:#4AEFDF;"><i class="fas fa-project-diagram"></i> Projects</a>
+    <a href="{% url 'contact' %}"><i class="fas fa-paper-plane"></i>Contact</a>
+{% endblock vertical-links %}
+
+{% block horizontal-links %}
     <a href="{% url 'index' %}">Home</a>
     <a href="{% url 'about' %}">About</a>
     <a href="{% url 'skills' %}">Skills</a>
     <a href="{% url 'projects' %}" class="current"
        onmouseover="this.style.borderBottom='2px #4AEFDF solid'">Projects</a>
     <a href="{% url 'contact' %}">Contact</a>
-{% endblock links %}
+{% endblock horizontal-links %}
 
 {% block content %}
     <!--------------------------Projects---------------------------->
