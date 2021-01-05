@@ -2,44 +2,53 @@
 
 {% block title %}Projects{% endblock %}
 
+{% block links %}
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'skills' %}">Skills</a>
+    <a href="{% url 'projects' %}" class="current"
+       onmouseover="this.style.borderBottom='2px #4AEFDF solid'">Projects</a>
+    <a href="{% url 'contact' %}">Contact</a>
+{% endblock links %}
+
 {% block content %}
-<!--------------------------Projects---------------------------->
-		<div class="projects">
-			<div data-aos="fade-right" class="title project-title">Projects</div>
-			<div  class="projects-cont">
-				<div class="project-image" style="background-image: url({% static 'images/clock.jpg' %});" onclick="">
-					<div class="project-overlay-cont">
-						<p class="project-info">A unique time display with a dark mode feature.</p>
-						<a href="https://Nwoye-Ezekiel.github.io/iclock/">
-							<button class="project-but">Visit Website</button>
-						</a>
-					</div>
-				</div>
-				<div class="project-image" style="background-image: url({% static  'images/4.jpg' %});" onclick="">
-					<div class="project-overlay-cont">
-						<p class="project-info">Vacant</p>
-						<!-- <a href="">
-							<button class="project-but">Visit Website</button>
-						</a> -->
-					</div>
-				</div>
-				<div class="project-image" style="background-image: url({% static 'images/4.jpg' %});" onclick="">
-					<div class="project-overlay-cont">
-						<p class="project-info">Vacant</p>
-						<!-- <a href="">
-							<button class="project-but">Visit Website</button>
-						</a> -->
-					</div>
-				</div>
-				<div class="project-image" style="background-image: url({% static 'images/4.jpg' %});" onclick="">
-					<div class="project-overlay-cont">
-						<p class="project-info">Vacant</p>
-						<!-- <a href="">
-							<button class="project-but">Visit Website</button>
-						</a> -->
-					</div>
-				</div>
-			</div>
-		</div>
-<!--------------------------/Projects--------------------------->
+    <!--------------------------Projects---------------------------->
+    <div class="projects">
+        <div data-aos="fade-right" class="title project-title">Projects</div>
+        <div class="projects-cont">
+            <div class="project-image" style="background-image: url({% static 'images/clock.jpg' %});" onclick="">
+                <div class="project-overlay-cont">
+                    <p class="project-info">A unique time display with a dark mode feature.</p>
+                    <a href="https://Nwoye-Ezekiel.github.io/iclock/">
+                        <button class="project-but">Visit Website</button>
+                    </a>
+                </div>
+            </div>
+            <div class="project-image" style="background-image: url({% static  'images/4.jpg' %});" onclick="">
+                <div class="project-overlay-cont">
+                    <p class="project-info">Vacant</p>
+                    <!-- <a href="">
+                        <button class="project-but">Visit Website</button>
+                    </a> -->
+                </div>
+            </div>
+            <div class="project-image" style="background-image: url({% static 'images/4.jpg' %});" onclick="">
+                <div class="project-overlay-cont">
+                    <p class="project-info">Vacant</p>
+                    <!-- <a href="">
+                        <button class="project-but">Visit Website</button>
+                    </a> -->
+                </div>
+            </div>
+            <div class="project-image" style="background-image: url({% static 'images/4.jpg' %});" onclick="">
+                <div class="project-overlay-cont">
+                    <p class="project-info">Vacant</p>
+                    <!-- <a href="">
+                        <button class="project-but">Visit Website</button>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------/Projects--------------------------->
 {% endblock %}

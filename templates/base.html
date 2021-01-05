@@ -51,11 +51,14 @@
         </div>
         <div class="horizontal-nav">
             <div class="links">
-                <a href="{% url 'index' %}">Home</a>
-                <a href="{% url 'about' %}" class="current" onmouseover="this.style.borderBottom='2px #4AEFDF solid'">About</a>
-                <a href="{% url 'skills' %}">Skills</a>
-                <a href="{% url 'projects' %}">Projects</a>
-                <a href="{% url 'contact' %}">Contact</a>
+                {% block links %}
+                    <a href="{% url 'index' %}">Home</a>
+                    <a href="{% url 'about' %}" class="current"
+                       onmouseover="this.style.borderBottom='2px #4AEFDF solid'">About</a>
+                    <a href="{% url 'skills' %}">Skills</a>
+                    <a href="{% url 'projects' %}">Projects</a>
+                    <a href="{% url 'contact' %}">Contact</a>
+                {% endblock links %}
             </div>
         </div>
     </div>

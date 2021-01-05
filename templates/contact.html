@@ -2,36 +2,51 @@
 
 {% block title %}Contact{% endblock %}
 
-{% block content %}
-<!------------------------------Contact------------------------->
-		<div class="contact">
+{% block links %}
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'skills' %}">Skills</a>
+    <a href="{% url 'projects' %}">Projects</a>
+    <a href="{% url 'contact' %}" class="current" onmouseover="this.style.borderBottom='2px #4AEFDF solid'">Contact</a>
+{% endblock links %}
 
-			<div class="contact-half">
-				<div data-aos="fade-right" class="title contact-title">Contact</div>
-				<div class="form-cont">
-					<form method="POST" action="">
-                        {% csrf_token %}
-						<div style="position:relative; margin-bottom:25px;">
-							<input onfocus="funcFocus(this.id, 'l-fname')" onblur="funcBlur(this.id, 'l-fname', this.type)" type="text" name="firstname" id="fname" required="">
-							<label id="l-fname" for="fname">First Name</label>
-						</div>
-						<div style="position:relative; margin-bottom:25px;">
-							<input onfocus="funcFocus(this.id, 'l-lname')" onblur="funcBlur(this.id, 'l-lname' ,this.type)" type="text" name="lastname" id="lname" required="">
-							<label id="l-lname" for="lname">Last Name</label>
-						</div>
-						<div style="position:relative; margin-bottom:25px;">
-							<input onfocus="funcFocus(this.id, 'l-email')" onblur="funcBlur(this.id, 'l-email' ,this.type)" type="email" name="email" id="email" required="">
-							<label id="l-email" for="email">Email</label>
-						</div>
-						<div style="position:relative; margin-bottom:25px;">
-					    	<textarea onfocus="funcFocus(this.id, 'l-message')" onblur="funcBlur(this.id, 'l-message' ,this.type)" id="message" name="message" style="height:200px; min-height: 40px;" required=""></textarea>
-					    	<label id="l-message" class="message-label" for="message">Message</label>
-				    	</div>
-				    	<div><button class="submit">Submit</button></div>
-					</form>
-				</div>
-			</div>
-			<div data-aos="fade-left" class="contact-image"></div>
-		</div>
-<!------------------------------/Contact------------------------>
+{% block content %}
+    <!------------------------------Contact------------------------->
+    <div class="contact">
+
+        <div class="contact-half">
+            <div data-aos="fade-right" class="title contact-title">Contact</div>
+            <div class="form-cont">
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <div style="position:relative; margin-bottom:25px;">
+                        <input onfocus="funcFocus(this.id, 'l-fname')" onblur="funcBlur(this.id, 'l-fname', this.type)"
+                               type="text" name="firstname" id="fname" required="">
+                        <label id="l-fname" for="fname">First Name</label>
+                    </div>
+                    <div style="position:relative; margin-bottom:25px;">
+                        <input onfocus="funcFocus(this.id, 'l-lname')" onblur="funcBlur(this.id, 'l-lname' ,this.type)"
+                               type="text" name="lastname" id="lname" required="">
+                        <label id="l-lname" for="lname">Last Name</label>
+                    </div>
+                    <div style="position:relative; margin-bottom:25px;">
+                        <input onfocus="funcFocus(this.id, 'l-email')" onblur="funcBlur(this.id, 'l-email' ,this.type)"
+                               type="email" name="email" id="email" required="">
+                        <label id="l-email" for="email">Email</label>
+                    </div>
+                    <div style="position:relative; margin-bottom:25px;">
+                        <textarea onfocus="funcFocus(this.id, 'l-message')"
+                                  onblur="funcBlur(this.id, 'l-message' ,this.type)" id="message" name="message"
+                                  style="height:200px; min-height: 40px;" required=""></textarea>
+                        <label id="l-message" class="message-label" for="message">Message</label>
+                    </div>
+                    <div>
+                        <button class="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div data-aos="fade-left" class="contact-image"></div>
+    </div>
+    <!------------------------------/Contact------------------------>
 {% endblock %}

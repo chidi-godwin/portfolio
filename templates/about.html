@@ -3,19 +3,32 @@
 
 {% block title %}About{% endblock %}
 
+{% block links %}
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}" class="current" onmouseover="this.style.borderBottom='2px #4AEFDF solid'">About</a>
+    <a href="{% url 'skills' %}">Skills</a>
+    <a href="{% url 'projects' %}">Projects</a>
+    <a href="{% url 'contact' %}">Contact</a>
+{% endblock links %}
+
 {% block content %}
-<!--------------------------About------------------------------->
-		<div class="about">
-			<div class="about-article-cont">
-				<div data-aos="fade-right" class="title about-title">About</div>
-				<div data-aos="fade-left" class="about-article">
-					<p>I am <span style="color: #018673;">Nwoye Ezekiel</span>, an undergraduate student in the department of Computer Engineering at the University of Lagos(UNILAG), Nigeria.</p>
-					<p>I started as a Graphic Designer and due to the great passion and deep interest i had in designing, I developed the urge to explore more into the design field which led me to study more and undergo self training to become a UI/UX designer and a Frontend web developer.</p>
-					<p>I love programming and the fundamental cause of which i enjoy being a Frontend web developer is the fact that i have the ability to bring my ideas and imaginations into reality through an app/website, providing solutions to real life problems.</p>
-				</div>
-			</div>
-			<img data-aos="fade-up" src="{% static 'images/ezekiel.jpg' %}" alt="ezekiel's image">
-			<div data-aos="fade-up" class="about-image"></div>
-		</div>
-<!--------------------------/About----------------------------->
+    <!--------------------------About------------------------------->
+    <div class="about">
+        <div class="about-article-cont">
+            <div data-aos="fade-right" class="title about-title">About</div>
+            <div data-aos="fade-left" class="about-article">
+                <p>I am <span style="color: #018673;">Nwoye Ezekiel</span>, an undergraduate student in the department
+                    of Computer Engineering at the University of Lagos(UNILAG), Nigeria.</p>
+                <p>I started as a Graphic Designer and due to the great passion and deep interest i had in designing, I
+                    developed the urge to explore more into the design field which led me to study more and undergo self
+                    training to become a UI/UX designer and a Frontend web developer.</p>
+                <p>I love programming and the fundamental cause of which i enjoy being a Frontend web developer is the
+                    fact that i have the ability to bring my ideas and imaginations into reality through an app/website,
+                    providing solutions to real life problems.</p>
+            </div>
+        </div>
+        <img data-aos="fade-up" src="{% static 'images/ezekiel.jpg' %}" alt="ezekiel's image">
+        <div data-aos="fade-up" class="about-image"></div>
+    </div>
+    <!--------------------------/About----------------------------->
 {% endblock %}

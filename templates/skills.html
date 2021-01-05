@@ -2,51 +2,59 @@
 
 {% block title %}Skills{% endblock %}
 
+{% block links %}
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'skills' %}" class="current" onmouseover="this.style.borderBottom='2px #4AEFDF solid'">Skills</a>
+    <a href="{% url 'projects' %}">Projects</a>
+    <a href="{% url 'contact' %}">Contact</a>
+{% endblock links %}
+
 {% block content %}
-<!------------------------------Skills-------------------------->
-		<div class="skills">
-			<div data-aos="fade-zoom-in" class="title skills-title">Skills</div>
-			<div class="skills-cont">
-				<div  class="skill">
-					<p data-aos="fade-right" class="sub-title">Languages <i class="fas fa-code"></i></p>
-					<ul data-aos="fade-left" style="color: white; margin: 20px 20px;">
-						<li>Html</li>
-						<li>CSS</li>
-						<li>Javascript</li>
-						<li>Python</li>
-						<li>C++</li>
-					</ul>
-				</div>
-				<div class="horizontal-line1"></div>
-				<div class="vertical-line"></div>
-				<div class="skill">
-					<p data-aos="fade-right" class="sub-title">What i design <i class="fas fa-pencil-alt"></i></p>
-					<ul data-aos="fade-left" style="color: white; margin: 20px 20px;">
-						<li>Graphic Designs</li>
-						<li>Logos</li>
-						<li>UI</li>
-						<li>UX</li>
-						<li>Websites</li>
-						<li>Mobile</li>	
-					</ul>
-				</div>
-				<div class="horizontal-line1 horizontal-line2"></div>
-				<div class="vertical-line"></div>
-				<div class="skill">
-					<p data-aos="fade-right" class="sub-title">IDEs/Softwares <i class="fas fa-tv"></i></p>
-					<ul data-aos="fade-left" style="color: white; margin: 20px 20px;">
-						<li>Visual Studio</li>
-						<li>Visual Studio Code</li>
-						<li>Sublime Text</li>
-						<li>Notepad++</li>
-						<li>Spyder</li>
-						<li>Code::Blocks</li>
-						<li>CorelDraw</li>
-						<li>Figma</li>
-						<li>Github</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-<!--------------------------/Skills----------------------------->
+    <!------------------------------Skills-------------------------->
+    <div class="skills">
+        <div data-aos="fade-zoom-in" class="title skills-title">Skills</div>
+        <div class="skills-cont">
+            <div class="skill">
+                <p data-aos="fade-right" class="sub-title">Languages <i class="fas fa-code"></i></p>
+                <ul data-aos="fade-left" style="color: white; margin: 20px 20px;">
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="horizontal-line1"></div>
+            <div class="vertical-line"></div>
+            <div class="skill">
+                <p data-aos="fade-right" class="sub-title">What i design <i class="fas fa-pencil-alt"></i></p>
+                <ul data-aos="fade-left" style="color: white; margin: 20px 20px;">
+                    <li>Graphic Designs</li>
+                    <li>Logos</li>
+                    <li>UI</li>
+                    <li>UX</li>
+                    <li>Websites</li>
+                    <li>Mobile</li>
+                </ul>
+            </div>
+            <div class="horizontal-line1 horizontal-line2"></div>
+            <div class="vertical-line"></div>
+            <div class="skill">
+                <p data-aos="fade-right" class="sub-title">IDEs/Softwares <i class="fas fa-tv"></i></p>
+                <ul data-aos="fade-left" style="color: white; margin: 20px 20px;">
+                    <li>Visual Studio</li>
+                    <li>Visual Studio Code</li>
+                    <li>Sublime Text</li>
+                    <li>Notepad++</li>
+                    <li>Spyder</li>
+                    <li>Code::Blocks</li>
+                    <li>CorelDraw</li>
+                    <li>Figma</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--------------------------/Skills----------------------------->
 {% endblock %}
