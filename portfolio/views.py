@@ -29,7 +29,11 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             subject = "Message from portfolio"
-            message = form.cleaned_data['message']
+            message = f""" Name: {form.cleaned_data['firstname']} {form.cleaned_data['lastname']}
+            
+            Message:
+                {form.cleaned_data['message']}
+            """
             sender = form.cleaned_data['email']
 
             recipients = ['nwoyeezekiel3@gmail.com']
